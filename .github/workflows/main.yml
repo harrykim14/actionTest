@@ -6,10 +6,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    # run 뒤에는 실제 작동하는 코드를 넣기
-    - name: print hello world
-      run: echo Hello, world!
-    - name: print dir
-      run: ls -al
-    - name: print python version
-      run: python -V
+    - uses: actions/checkout@v2
+    - name: run python file
+      run: python test.py
