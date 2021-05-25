@@ -14,3 +14,12 @@ GitHub에서 제공하는 Action을 사용해보기
 ![image](https://user-images.githubusercontent.com/67398691/119435132-86b76300-bd54-11eb-97ba-1acb35be2aac.png)
 
 이미지2) 실제로 저장소에 변경이 생기면 Actions에서 해당 액션이 구동됨을 확인 할 수 있다
+
+2. 파이썬 파일을 액션으로 실행해보기
+
+![image](https://user-images.githubusercontent.com/67398691/119437704-a7ce8280-bd59-11eb-9901-c928d3a01a49.png)
+![image](https://user-images.githubusercontent.com/67398691/119437713-a9984600-bd59-11eb-85aa-1851bded3f8f.png)
+
+이미지3,4) 저장소에 파이썬 파일을 생성하고 액션을 수정하기
+
+- 이 때, uses:actions/checkout@v2를 명시하지 않으면 실행되지 않는다
