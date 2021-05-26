@@ -23,3 +23,22 @@ GitHub에서 제공하는 Action을 사용해보기
 이미지3,4) 저장소에 파이썬 파일을 생성하고 액션을 수정하기
 
 - 이 때, uses:actions/checkout@v2를 명시하지 않으면 실행되지 않는다
+
+3. 파이썬 패키지를 설치하기
+
+![image](https://user-images.githubusercontent.com/67398691/119695142-dbf49100-be88-11eb-9c77-f5ad653e78a0.png)
+
+이미지5) main.yml에 패키지를 인스톨하는 구문을 추가
+
+4. 설치된 파이썬 패키지를 통해 크롤링 하기
+
+![image](https://user-images.githubusercontent.com/67398691/119695256-f62e6f00-be88-11eb-866f-18de0230e75c.png)
+
+이미지6) BeautifulSoup 라이브러리를 사용하여 리디북스의 신간 서적 리스트를 긁어오기
+
+![image](https://user-images.githubusercontent.com/67398691/119695423-1ceca580-be89-11eb-80d8-ebfc3ce9052d.png)
+
+![image](https://user-images.githubusercontent.com/67398691/119695436-2118c300-be89-11eb-8d0c-f71c5f337e56.png)
+
+이미지 7,8) Action을 사용해 크롤링한 결과와 실제 페이지
+
