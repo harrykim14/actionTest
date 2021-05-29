@@ -39,7 +39,7 @@ for i in range(len(날짜)):
     })
 
 # 파일을 한 번 쓴다
-with open('data.js', "w", encoding="UTF-9-sig") as f_write:
+with open('data.js', "w", encoding="UTF-8-sig") as f_write:
     json.dump(list, f_wirte, ensure_ascii=False, indent=4)
 
 # 파일을 다시 읽기
