@@ -14,7 +14,7 @@ soup.select('#update')[0].text
 soup.select('.table > tbody > tr')[1]
 oneStep = soup.select('.main')[2]
 twoStep = oneStep.select('tbody > tr')[1:]
-twoStep[0].select('td')[1].text.replace('.', '')
+twoStep[0].select('td')[1].text.replace(',', '')
 
 날짜 = []
 종가 = []
@@ -23,9 +23,9 @@ twoStep[0].select('td')[1].text.replace('.', '')
 
 for i in twoStep:
     날짜.append(i.select('td')[0].text)
-    종가.append(int(i.select('td')[1].text.replace('.', '')))
-    전일비.append(int(i.select('td')[2].text.replace('.', '')))
-    거래량.append(int(i.select('td')[6].text.replace('.', '')))
+    종가.append(int(i.select('td')[1].text.replace(',', '')))
+    전일비.append(int(i.select('td')[2].text.replace(',', '')))
+    거래량.append(int(i.select('td')[6].text.replace(',', '')))
 
 list = []
 
