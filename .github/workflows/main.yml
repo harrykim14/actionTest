@@ -31,12 +31,11 @@ jobs:
       run: python test.py
     - name: 4. 생성한 일을 커밋하기
       run:
-        git config --local user.email "harrykim14@korea.ac.kr"
         git config --local user.name "harrykim14"
         git add .
         git commit -m "Run Crawler and Update current data" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        # branch: "master"
        github_token: ${{ secrets.GITHUB_TOKEN }}
+       branch: ${{ github.ref }}
