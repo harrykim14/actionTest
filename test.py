@@ -52,5 +52,5 @@ with open('data.js', "r", encoding="UTF-8-sig") as f:
 
 # 파일에 변수명을 추가하여 다시 쓰기
 final_data = f"var data = {data};"
-with open('data.js', "w', encoding="UTF-8-sig") as f_write:
+with open('data.js', "w", encoding="UTF-8-sig") as f_write:
     f_write.write(final_data)
