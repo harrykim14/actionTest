@@ -72,3 +72,13 @@ GitHub에서 제공하는 Action을 사용해보기
    *        *         *        *         *
 # 분(0-59) 시간(0-23) 일(1-31) 월(1-12) 요일(0-7)
 ```
+
+6. 크롤링한 내용을 파일로 저장하여 저장소에 푸쉬하기
+
+![fileWrite](https://user-images.githubusercontent.com/67398691/120098068-d17b1580-c16e-11eb-9ce6-5e1a8dcecb3d.JPG)
+
+이미지9) with open 함수를 사용하여 js파일 내 json 형태로 크롤해 온 데이터를 저장
+
+![commit](https://user-images.githubusercontent.com/67398691/120098072-d50e9c80-c16e-11eb-90a1-4307e0bad092.JPG)
+
+이미지10) 커밋을 위해 git 커맨드를 차례로 실행하고 push는 github actions에서 제공하는 github-push-action을 사용하여 
